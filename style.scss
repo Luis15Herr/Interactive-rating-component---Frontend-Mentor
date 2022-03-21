@@ -1,0 +1,129 @@
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+$Circles: #262f38;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: $VeryDarkBlue;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(./design/desktop-design.jpg);
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating__modal {
+  background-color: #1f2630;
+  padding: 30px 38px 30px 30px;
+  width: 410px;
+  height: 410px;
+  border-radius: 25px;
+}
+.rating__icon {
+  width: 50px;
+  height: 50px;
+  background-color: $Circles;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.rating__title {
+  margin-top: 30px;
+  color: $White;
+  display: block;
+  font-size: 1.93em;
+}
+.rating__subtitle {
+  display: block;
+  color: $LightGrey;
+  margin-top: 12px;
+  line-height: 1.55;
+}
+.valoration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  input[type="radio"] {
+    display: none;
+    &:checked + label {
+      background: $Orange;
+      transition: ease 0.2s;
+    }
+  }
+  label {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background: $DarkBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $White;
+    font-weight: 700;
+    transition: ease 0.2s;
+    &:hover {
+      background: $LightGrey;
+      cursor: pointer;
+      transition: ease 0.2s;
+    }
+  }
+}
+.valoration__btn {
+  background-color: $Orange;
+  border: 0;
+  width: 100%;
+  border-radius: 50px;
+  height: 45px;
+  color: $White;
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+  margin-top: 30px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  transition: ease 0.2s;
+  font-weight: 700;
+  &:hover {
+    transition: ease 0.2s;
+
+    background-color: $White;
+    color: $Orange;
+    cursor: pointer;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
