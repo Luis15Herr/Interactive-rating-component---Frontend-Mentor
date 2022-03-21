@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url(./design/desktop-design.jpg);
+    background-image: url(./design/desktop-thank-you-state.jpg);
     background-position: center;
     opacity: 0.2;
     pointer-events: none;
@@ -118,6 +118,28 @@ body {
     color: $Orange;
     cursor: pointer;
   }
+}
+
+.rating__valoration {
+  display: none;
+}
+.rating__thanks {
+  text-align: center;
+}
+.rating__img {
+  margin-top: 15px;
+}
+
+.selection {
+  background-color: #262f38;
+  color: #fb7413;
+  padding: 5px 20px;
+  margin-top: 28px;
+  font-size: 1em;
+  display: inline-block;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-bottom: 3px;
 }
 .attribution {
   font-size: 11px;
