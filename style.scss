@@ -67,6 +67,7 @@ body {
   line-height: 1.55;
 }
 .valoration {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -121,6 +122,8 @@ body {
 }
 
 .rating__valoration {
+}
+.rating__thanks {
   display: none;
 }
 .rating__thanks {
@@ -128,6 +131,14 @@ body {
 }
 .rating__img {
   margin-top: 15px;
+}
+.error {
+  position: absolute;
+  top: -20px;
+  font-weight: 700;
+  color: #cd5f5f;
+  font-style: italic;
+  display: none;
 }
 
 .selection {
