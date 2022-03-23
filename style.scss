@@ -26,7 +26,8 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url(./design/desktop-thank-you-state.jpg);
+    background-image: url(./design/mobile-thank-you-state.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     opacity: 0.2;
     pointer-events: none;
@@ -159,4 +160,51 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .rating__modal {
+    width: 330px;
+    height: 360px;
+    padding: 25px 25px 30px 25px;
+  }
+  .rating__icon {
+    width: 40px;
+    height: 40px;
+    svg {
+      transform: scale(0.8);
+    }
+  }
+  .rating__title {
+    margin-top: 16px;
+    font-size: 1.65em;
+  }
+  .rating__subtitle {
+    font-size: 0.94em;
+    line-height: 1.57;
+  }
+  .valoration {
+    label {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .valoration__btn {
+    margin-top: 24px;
+  }
+  .rating__img {
+    margin-top: 3px;
+    img {
+      transform: scale(0.9);
+    }
+  }
+  .selection {
+    margin-top: 14px;
+    font-size: 0.9em;
+  }
+  .rating__thanks {
+    .rating__title {
+      margin-top: 26px;
+    }
+  }
 }
